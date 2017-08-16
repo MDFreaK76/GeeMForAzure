@@ -7,7 +7,7 @@
     <ProjectGuid>5291d1b6-141c-44b2-9d54-800cdfc9e44b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>runserver.py</StartupFile>
+    <StartupFile>GeeMForAzure\runserver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -36,7 +36,7 @@
     <Compile Include="GeeMForAzure\geemusic\utils\music_queue.py" />
     <Compile Include="GeeMForAzure\geemusic\utils\__init__.py" />
     <Compile Include="GeeMForAzure\geemusic\__init__.py" />
-    <Compile Include="runserver.py" />
+    <Compile Include="GeeMForAzure\runserver.py" />
     <Compile Include="GeeMForAzure\__init__.py" />
     <Compile Include="GeeMForAzure\views.py" />
   </ItemGroup>
@@ -69,7 +69,7 @@
     <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICPLAYLIST.txt" />
     <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICRECORDING.txt" />
     <Content Include="GeeMForAzure\speech_assets\sampleUtterances.txt" />
-    <Content Include="requirements.txt" />
+    <Content Include="GeeMForAzure\requirements.txt" />
     <Content Include="GeeMForAzure\static\content\bootstrap.css" />
     <Content Include="GeeMForAzure\static\content\bootstrap.min.css" />
     <Content Include="GeeMForAzure\static\content\site.css" />

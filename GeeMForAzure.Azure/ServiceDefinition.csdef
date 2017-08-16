@@ -20,7 +20,7 @@
      <Variable name="EMULATED">
       <RoleInstanceValue xpath="/RoleEnvironment/Deployment/@emulated" />
      </Variable>
-     <Variable name="PYTHON" value="D:\Python34\Python.exe" />
+     <Variable name="PYTHON" value="D:\home\python361x64\python.exe" />
     </Environment>
    </Task>
   </Startup>
