@@ -14,7 +14,7 @@
     <LaunchProvider>Web launcher</LaunchProvider>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
     <OutputPath>.</OutputPath>
-    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <SuppressCollectPythonCloudServiceFiles>false</SuppressCollectPythonCloudServiceFiles>
     <Name>GeeMForAzure</Name>
     <RootNamespace>GeeMForAzure</RootNamespace>
   </PropertyGroup>
@@ -27,12 +27,28 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GeeMForAzure\geemusic\controllers.py" />
+    <Compile Include="GeeMForAzure\geemusic\intents\playback.py" />
+    <Compile Include="GeeMForAzure\geemusic\intents\selection.py" />
+    <Compile Include="GeeMForAzure\geemusic\intents\__init__.py" />
+    <Compile Include="GeeMForAzure\geemusic\utils\last_fm.py" />
+    <Compile Include="GeeMForAzure\geemusic\utils\music.py" />
+    <Compile Include="GeeMForAzure\geemusic\utils\music_queue.py" />
+    <Compile Include="GeeMForAzure\geemusic\utils\__init__.py" />
+    <Compile Include="GeeMForAzure\geemusic\__init__.py" />
     <Compile Include="runserver.py" />
     <Compile Include="GeeMForAzure\__init__.py" />
     <Compile Include="GeeMForAzure\views.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\" />
     <Folder Include="GeeMForAzure\" />
+    <Folder Include="GeeMForAzure\geemusic\" />
+    <Folder Include="GeeMForAzure\geemusic\intents\" />
+    <Folder Include="GeeMForAzure\geemusic\utils\" />
+    <Folder Include="GeeMForAzure\speech_assets\" />
+    <Folder Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\" />
+    <Folder Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\" />
     <Folder Include="GeeMForAzure\static\" />
     <Folder Include="GeeMForAzure\static\content\" />
     <Folder Include="GeeMForAzure\static\fonts\" />
@@ -40,6 +56,19 @@
     <Folder Include="GeeMForAzure\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\ConfigureCloudService.ps1" />
+    <Content Include="bin\ps.cmd" />
+    <Content Include="bin\readme.html">
+      <SubType>WebBrowser</SubType>
+    </Content>
+    <Content Include="bin\web.config" />
+    <Content Include="GeeMForAzure\speech_assets\intentSchema.json" />
+    <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\intentSchema.json" />
+    <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICALBUM.txt" />
+    <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICGROUP.txt" />
+    <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICPLAYLIST.txt" />
+    <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICRECORDING.txt" />
+    <Content Include="GeeMForAzure\speech_assets\sampleUtterances.txt" />
     <Content Include="requirements.txt" />
     <Content Include="GeeMForAzure\static\content\bootstrap.css" />
     <Content Include="GeeMForAzure\static\content\bootstrap.min.css" />
@@ -67,6 +96,8 @@
     <Content Include="GeeMForAzure\templates\contact.html" />
     <Content Include="GeeMForAzure\templates\index.html" />
     <Content Include="GeeMForAzure\templates\layout.html" />
+    <None Include="rhgeemusicwebapp - Web Deploy.pubxml" />
+    <None Include="rhgeemusicwebapp - FTP.pubxml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

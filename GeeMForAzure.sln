@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GeeMForAzure", "GeeMForAzure\GeeMForAzure.pyproj", "{5291D1B6-141C-44B2-9D54-800CDFC9E44B}"
 EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "GeeMForAzure.Azure", "GeeMForAzure.Azure\GeeMForAzure.Azure.ccproj", "{3AD2CF8D-508A-4F06-8C89-A5A89C0AED1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5291D1B6-141C-44B2-9D54-800CDFC9E44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5291D1B6-141C-44B2-9D54-800CDFC9E44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5291D1B6-141C-44B2-9D54-800CDFC9E44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD2CF8D-508A-4F06-8C89-A5A89C0AED1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD2CF8D-508A-4F06-8C89-A5A89C0AED1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD2CF8D-508A-4F06-8C89-A5A89C0AED1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD2CF8D-508A-4F06-8C89-A5A89C0AED1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
