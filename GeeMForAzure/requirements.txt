@@ -7,6 +7,7 @@ click==6.7
 cryptography==2.0
 decorator==4.1.1
 enum34==1.1.6
+Flask==0.12.2
 Flask-Ask==0.9.6
 funcsigs==1.0.2
 future==0.16.0

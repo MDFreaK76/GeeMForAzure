@@ -37,6 +37,7 @@
     <Compile Include="GeeMForAzure\geemusic\utils\__init__.py" />
     <Compile Include="GeeMForAzure\geemusic\__init__.py" />
     <Compile Include="GeeMForAzure\runserver.py" />
+    <Compile Include="GeeMForAzure\server.py" />
     <Compile Include="GeeMForAzure\__init__.py" />
     <Compile Include="GeeMForAzure\views.py" />
   </ItemGroup>
@@ -62,6 +63,8 @@
       <SubType>WebBrowser</SubType>
     </Content>
     <Content Include="bin\web.config" />
+    <Content Include="GeeMForAzure\Procfile" />
+    <Content Include="GeeMForAzure\runtime.txt" />
     <Content Include="GeeMForAzure\speech_assets\intentSchema.json" />
     <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\intentSchema.json" />
     <Content Include="GeeMForAzure\speech_assets\non_us_custom_slot_version\sample_slot_data\MUSICALBUM.txt" />
